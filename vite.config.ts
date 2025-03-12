@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import uni from "@dcloudio/vite-plugin-uni";
 import AutoImport from 'unplugin-auto-import/vite'
-import UniModulePages from 'vite-uni-module-pages';
 
 // https://vitejs.dev/config/
 export default defineConfig(
@@ -10,7 +9,6 @@ export default defineConfig(
     return {
       plugins: [
         UnoCss(),
-        UniModulePages({dirs: 'games'}),
         uni(),
         AutoImport({
           imports: [
